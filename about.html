@@ -13,6 +13,18 @@
     main { max-width: 700px; margin: 60px auto; padding: 0 20px; }
     main h2 { font-size: 1.8rem; margin-bottom: 15px; color: #1a73e8; }
     main p { line-height: 1.8; }
+    .profile-pic {
+      display: block;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 25px;
+      border: 4px solid #1a73e8;
+    }
+    .about-box {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -26,8 +38,11 @@
     <a href="contact.html">Contact</a>
   </nav>
   <main>
-    <h2>About Me 👤</h2>
-    <p>Hi! I'm Solomon. This is my personal website where I share who I am and what I do. Feel free to explore and get in touch!</p>
+    <div class="about-box">
+      <img src="profile.jpg" alt="Solomon's Profile Picture" class="profile-pic">
+      <h2>About Me 👤</h2>
+      <p>Hi! I'm Solomon. This is my personal website where I share who I am and what I do. Feel free to explore and get in touch!</p>
+    </div>
   </main>
 </body>
 </html>
