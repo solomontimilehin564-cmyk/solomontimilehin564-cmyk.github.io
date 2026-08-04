@@ -12,18 +12,39 @@
     nav a:hover { text-decoration: underline; }
     main { max-width: 700px; margin: 60px auto; padding: 0 20px; }
     main h2 { font-size: 1.8rem; margin-bottom: 15px; color: #1a73e8; }
-    main p { line-height: 1.8; margin-bottom: 10px; }
-    a.email-link {
-      display: inline-block;
-      margin-top: 15px;
+    main p { line-height: 1.8; margin-bottom: 20px; }
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: sans-serif;
+    }
+    .contact-form textarea {
+      height: 150px;
+      resize: vertical;
+    }
+    .contact-form button {
       background-color: #1a73e8;
       color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
       font-weight: bold;
     }
-    a.email-link:hover { background-color: #1558b0; }
+    .contact-form button:hover { background-color: #1558b0; }
   </style>
 </head>
 <body>
@@ -38,8 +59,14 @@
   </nav>
   <main>
     <h2>Contact Me 📬</h2>
-    <p>I'd love to hear from you! Reach out via email and I'll get back to you as soon as possible.</p>
-    <a class="email-link" href="mailto:sfavour276@gmail.com">Send me an Email</a>
+    <p>I'd love to hear from you! Fill out the form below and I'll get back to you as soon as possible.</p>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea placeholder="Your Message..."></textarea>
+      <button type="button">Send Message</button>
+    </div>
   </main>
 </body>
 </html>
